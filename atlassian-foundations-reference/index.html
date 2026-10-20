@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="문제를 구조화하고 AI·소프트웨어 접근을 설계해 검증하는 AX 개발자 포트폴리오">
+  <title>AX Engineer Portfolio</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <header class="topbar">
+    <button class="icon-button mobile-menu" id="menu-toggle" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
+    <a class="brand" href="#main-content"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Portfolio</span></a>
+    <nav class="product-nav" aria-label="주요 탐색"><a class="active" href="#main-content">Work</a><a href="#engineering">Engineering notes</a></nav>
+    <div class="topbar-actions"><button class="text-button search-button" id="search-button" aria-label="프로젝트 찾기"><span class="search-icon" aria-hidden="true"></span>Search</button><button class="icon-button theme-button" id="theme-toggle" aria-label="색상 테마 전환">◐</button></div>
+  </header>
+  <div class="site-layout">
+    <aside class="sidebar" id="side-navigation" aria-label="포트폴리오 탐색">
+      <nav class="side-nav">
+        <div class="nav-item"><a href="#main-content">Start here</a></div>
+        <div class="nav-group open"><div class="nav-item"><a class="selected" href="#featured">Featured projects</a><button class="nav-toggle" aria-label="대표 프로젝트 접기" aria-expanded="true">⌃</button></div><div class="subnav"><a href="#news-bias">News Bias Explorer</a><a href="#smart-wardrobe">Smart Wardrobe Agent</a></div></div>
+        <div class="nav-group open"><div class="nav-item"><a href="#selected">Selected work</a><button class="nav-toggle" aria-label="핵심 보조 프로젝트 접기" aria-expanded="true">⌃</button></div><div class="subnav"><a href="#tacitflow">TacitFlow</a><a href="#interviewiq">InterviewIQ</a></div></div>
+        <div class="nav-item"><a href="#engineering">Engineering practice</a></div><div class="nav-item"><a href="#archive">Project archive</a></div><div class="nav-item"><a href="#evidence">Evidence</a></div><div class="nav-item"><a href="#contact">Contact</a></div>
+      </nav>
+    </aside>
+    <main class="content" id="main-content"><div class="content-inner">
+      <div class="breadcrumb"><a href="#main-content">Portfolio</a><span>/</span><span>AI · AX engineering</span></div>
+      <section class="intro"><h1>채용하세요.<br>끝까지 가는 신입 AX 개발자</h1><p>현업과 유사한 문제를 구조화하고, AI·소프트웨어 접근을 설계한 뒤 결과를 검증합니다. 2027년 상반기 AI/AX 엔지니어 또는 백엔드·FDE 성격의 개발 직무를 목표로 합니다.</p></section>
+      <div class="hero-art" role="img" aria-label="AI와 시스템 설계를 나타내는 추상 그래픽"><div class="orb orb-pink"></div><div class="orb orb-yellow"></div><div class="orb orb-blue"></div><div class="beam beam-left"></div><div class="beam beam-right"></div><div class="hero-grid"></div><div class="hero-title">BUILD · TEST · LEARN</div></div>
+      <section class="section" id="featured"><h2>Featured projects</h2><div class="card-grid two">
+        <a class="feature-card" id="news-bias" href="https://github.com/thdwlndjs/news-bias-analyzer" target="_blank" rel="noopener noreferrer"><div class="card-art project-mockup"><span>PROJECT MOCKUP</span></div><div><h3>News Bias Explorer <span>↗</span></h3><p>다관점 기사 검색을 위한 검색 전략 설계와 성능 최적화. 관련성뿐 아니라 관점 다양성까지 고려하는 검색 문제를 정의하고, 처리 시간을 약 2분에서 14초로 개선했습니다.</p></div></a>
+        <a class="feature-card" id="smart-wardrobe" href="https://github.com/thdwlndjs/LG-CLOS-IT" target="_blank" rel="noopener noreferrer"><div class="card-art project-mockup"><span>PROJECT MOCKUP</span></div><div><h3>Smart Wardrobe Agent <span>↗</span></h3><p>물리적 의류 상태의 디지털 모델링과 상황 기반 에이전트 설계. 관측·추정·사용자 확인 상태를 나누어 현실 환경의 불확실성을 다룹니다.</p></div></a>
+      </div></section>
+      <section class="section" id="selected"><h2>Selected work</h2><div class="card-grid two">
+        <a class="feature-card" id="tacitflow" href="https://github.com/thdwlndjs/Tacitflow" target="_blank" rel="noopener noreferrer"><div class="card-art project-mockup"><span>PROJECT MOCKUP</span></div><div><h3>TacitFlow <span>↗</span></h3><p>업무 기록과 매뉴얼 사이의 설명되지 않는 차이를 찾아 질문하고, 검증을 거쳐 암묵지를 구조화하는 AX 프로젝트입니다.</p></div></a>
+        <a class="feature-card" id="interviewiq" href="https://github.com/thdwlndjs/InterviewIQ" target="_blank" rel="noopener noreferrer"><div class="card-art project-mockup"><span>PROJECT MOCKUP</span></div><div><h3>InterviewIQ <span>↗</span></h3><p>음성·영상 데이터를 문답 단위로 연결하는 멀티모달 모의면접 파이프라인. 분석 정확도와 병목 구간을 함께 다룹니다.</p></div></a>
+      </div></section>
+      <section class="section" id="engineering"><h2>Engineering practice</h2><div class="card-grid three">
+        <a class="feature-card" href="#news-bias"><div class="card-art project-mockup"><span>PROJECT MOCKUP</span></div><div><h3>CoachCU <span>↗</span></h3><p>개인 작업 흐름을 기록하고 코칭하는 Windows 데스크톱 앱.</p></div></a>
+        <a class="feature-card" href="#archive"><div class="card-art project-mockup"><span>PROJECT MOCKUP</span></div><div><h3>LG_AX <span>→</span></h3><p>중간 평가를 바탕으로 탐색 경로를 조정하는 리서치 에이전트.</p></div></a>
+        <a class="feature-card" href="https://github.com/thdwlndjs/wantwear" target="_blank" rel="noopener noreferrer"><div class="card-art project-mockup"><span>PROJECT MOCKUP</span></div><div><h3>WantWear <span>↗</span></h3><p>관심 패션 상품의 인증·상태 관리와 운영 흐름을 구현한 웹 서비스.</p></div></a>
+        <a class="feature-card" href="https://github.com/thdwlndjs/personalized-travel-curator" target="_blank" rel="noopener noreferrer"><div class="card-art project-mockup"><span>PROJECT MOCKUP</span></div><div><h3>Personalized Travel Curator <span>↗</span></h3><p>이미지 태그와 선호도를 연결한 여행지 추천 프로젝트.</p></div></a>
+        <a class="feature-card" href="https://github.com/thdwlndjs/knowledge-graph" target="_blank" rel="noopener noreferrer"><div class="card-art project-mockup"><span>PROJECT MOCKUP</span></div><div><h3>Knowledge Graph <span>↗</span></h3><p>FastAPI와 Neo4j로 전문가 정보를 관리하는 그래프 데이터 프로젝트.</p></div></a>
+        <a class="feature-card" href="https://github.com/gth3283/RecycleCenter" target="_blank" rel="noopener noreferrer"><div class="card-art project-mockup"><span>PROJECT MOCKUP</span></div><div><h3>RecycleCenter <span>↗</span></h3><p>재활용품 분류 상호작용을 구현한 Unity 게임 프로젝트.</p></div></a>
+        <a class="feature-card" href="https://github.com/thdwlndjs/ASC" target="_blank" rel="noopener noreferrer"><div class="card-art project-mockup"><span>PROJECT MOCKUP</span></div><div><h3>ASC <span>↗</span></h3><p>업무 요청부터 실행·검토·기록을 연결하는 AI 워크플로.</p></div></a>
+      </div></section>
+      <section class="section" id="evidence"><h2>Evidence</h2><div class="card-grid two"><a class="feature-card" href="#featured"><div class="card-art type-art"><b>01</b></div><div><h3>Technical decisions <span>→</span></h3><p>문제 정의, 대안 비교, 트레이드오프, 직접 구현 범위를 프로젝트마다 남깁니다.</p></div></a><a class="feature-card" href="#featured"><div class="card-art card-art-access"><b>14s</b></div><div><h3>Metrics &amp; validation <span>→</span></h3><p>성능 수치가 무엇을 측정하는지와 검증 조건을 함께 제시합니다.</p></div></a></div></section>
+      <footer id="contact"><span class="brand-mark mini" aria-hidden="true"><i></i><i></i><i></i></span><div><strong>AX Engineer Portfolio</strong><p>문제를 구조화하고, 적합한 AI·소프트웨어 접근을 설계하고, 실제 결과를 검증하는 엔지니어.</p><p><a href="https://github.com/thdwlndjs" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p></div></footer>
+    </div></main>
+  </div>
+  <dialog class="search-dialog" id="search-dialog"><form method="dialog"><div><span class="search-icon"></span><input id="site-search" autofocus placeholder="프로젝트 또는 기술 검색"><button aria-label="검색 닫기">×</button></div><p id="search-result">프로젝트 이름 또는 기술 키워드를 입력하세요.</p></form></dialog>
+  <script src="./app.js"></script>
+</body>
+</html>

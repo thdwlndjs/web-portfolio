@@ -9,3 +9,75 @@
 @media(max-width:480px){html{scroll-padding-top:107px}.header-inner{flex-wrap:wrap;gap:0;padding-top:16px}.wordmark{font-size:17px}.github-link{border:0;margin-left:auto;padding:0}.main-nav{order:3;width:100%;gap:26px;margin:0;padding:13px 0 12px}.intro{padding-top:35px}.intro h1{font-size:clamp(50px,14vw,68px);letter-spacing:-2.5px;margin-top:17px}.intro-role{font-size:17px;margin-top:14px}.intro-description{font-size:12px;margin-top:17px}.intro-links{gap:20px;margin-top:23px}.profile-summary{grid-template-columns:1fr;gap:13px}.profile-summary>div{display:grid;grid-template-columns:47px 1fr;align-items:baseline}.section-heading>p{display:none}.project{padding:18px}.project-actions{gap:12px}.preview-image{height:194px}.email-group>a{font-size:12px}.guide-widget{right:16px;bottom:16px}.dialog-heading .small-button{padding-inline:8px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 .plain-button{border:0;background:transparent;padding:0}.dialog-open{overflow:hidden}
+/* Light theme — PANTONE 11-4201 Cloud Dancer inspired */
+:root{
+  color-scheme:light;
+  --bg:#f2f0eb;
+  --surface:#fbfaf7;
+  --fg:#20221f;
+  --muted:#6f736d;
+  --border:#d8d6cf;
+  --mono:"Cascadia Code","SFMono-Regular",Consolas,monospace;
+}
+body{background:var(--bg);color:var(--fg)}
+::selection{background:#daddd5;color:#20221f}
+button:focus-visible,a:focus-visible,input:focus-visible{outline-color:#454a44}
+.skip-link{background:#20221f;color:#fbfaf7}
+.site-header{background:#f2f0ebed;border-color:var(--border)}
+.reading-progress{background:#6f756d}
+.wordmark span,.eyebrow{color:var(--muted)}
+.main-nav a,.github-link,.text-link{color:#626760}
+.main-nav a:hover,.github-link:hover,.text-link:hover{color:#20221f}
+.github-link{border-color:var(--border);color:#333832}
+.intro-role,.profile-summary dd{color:#343934}
+.intro-description,.profile-summary dd span{color:#666b64}
+.profile-summary{border-color:var(--border)}
+.profile-summary dt,.section-count,.project-number{color:#7c817a}
+.content-section,.site-footer,.dialog-detail{border-color:var(--border)}
+.section-heading>p,.project-collection-heading p,.result-count{color:#71766f}
+.primary-button{background:#29302a;border-color:#29302a;color:#fbfaf7}
+.primary-button:hover{background:#4e584e}
+.small-button{background:transparent;color:#343a34;border-color:#bbbdb5}
+.small-button:hover{background:#e5e4de;border-color:#989c93}
+.project,.grid-card{background:var(--surface);border-color:var(--border);box-shadow:none}
+.project:hover,.project:focus-within,.grid-card:hover,.grid-card:focus-within{background:#fffefb;border-color:#aaaDA5;box-shadow:0 14px 34px #383d3012}
+.project-meta,.project-category,.grid-meta,.grid-role{color:#72776f}
+.project-status{border-color:#cac8c0;color:#4e554d;background:#f2f1ec}
+.project-title span,.grid-title span{color:#6f756d}
+.project-title:hover span{color:#20221f}
+.project-description,.grid-description{color:#4d524c}
+.implementation-list{color:#555a54}
+.implementation-list li:before{color:#888d85}
+.tags span{border-color:#d3d1c9;color:#5d635c;background:#f7f6f2}
+.project-preview{background:#f7f6f2;border-color:#d4d2ca;color:#676c65}
+.project-preview:hover{border-color:#999f96}
+.preview-toolbar,.preview-caption{border-color:#d4d2ca}
+.preview-image{background:#ebeae5}
+.search-label{color:#555b54}
+.search-label input{background:#fffefb;border-color:#babbb4;color:#242923}
+.search-label input::placeholder{color:#888d85}
+.group-filters button,.empty button{background:#fbfaf7;border-color:#c7c6be;color:#4c524b}
+.group-filters button[aria-pressed=true]{background:#29302a;border-color:#29302a;color:#fbfaf7}
+.grid-visual{background:#ebeae5;border-color:#d4d2ca}
+.visual-count,.visual-arrow{background:#fbfaf7e8;border-color:#c5c4bc;color:#434940}
+.grid-card:hover .visual-arrow{background:#29302a;color:#fbfaf7}
+.grid-actions{border-color:#d8d6cf}
+.empty{border-color:#d4d2ca;color:#555a54;background:#fbfaf7}
+.about-copy p{color:#565b54}
+.about-copy .education,.skill-items span,.award-row>span,.award-row p,.contact-copy>p,.copy-email{color:#70756e}
+.skill-group h3,.awards h3{color:#353a34}
+.awards{border-color:var(--border)}
+.copy-email{background:#f7f6f2;border-color:#d4d2ca}
+.copy-email:hover{color:#20221f;border-color:#9da198}
+.email-group>a{border-color:#8e938b}
+.project-dialog{background:#fbfaf7;border-color:#c8c6be;color:var(--fg);box-shadow:0 25px 100px #30352a24}
+.project-dialog::backdrop{background:#494d4533}
+.icon-button{border-color:#c9c7bf;color:#4e544d}
+.icon-button:hover{background:#29302a;color:#fbfaf7}
+.dialog-heading p:not(.eyebrow),.gallery-controls p,.dialog-detail p,.dialog-detail li{color:#636861}
+.gallery-stage{background:#ebeae5;border-color:#d4d2ca}
+.guide-trigger{background:linear-gradient(140deg,#fbfaf7,#e8e7e1);border-color:#c9c7bf;box-shadow:0 10px 30px #363a3218;color:#242923}
+.guide-icon{background:linear-gradient(150deg,#4b544b,#242b25);border-color:#4b544b;color:#fbfaf7}
+.guide-copy strong span,.guide-copy small,.guide-arrow{color:#6b7069}
+.guide-arrow{border-color:#c9c7bf}
+@media(max-width:760px){.profile-summary,.skill-groups{border-color:var(--border)}}

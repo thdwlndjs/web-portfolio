@@ -242,6 +242,9 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline-color:#454a44}
   .career-highlights>div{display:grid;grid-template-columns:58px 1fr;gap:7px;padding:7px 0;border-bottom:1px solid var(--border)}
   .career-highlights span{color:var(--muted);font:8px/1.45 var(--mono);letter-spacing:.04em}
   .career-highlights strong{font-size:11px;line-height:1.45}
+  .career-supporting{padding:9px 0 2px}
+  .career-supporting>span{color:var(--muted);font:8px var(--mono);letter-spacing:.04em}
+  .career-supporting p{margin-top:4px;color:#565b54;font-size:9px;line-height:1.6}
   .sidebar .about{padding:12px 0;border-top:0}
   .sidebar .skill-groups{display:flex;flex-wrap:wrap;gap:5px;padding-top:20px}
   .sidebar .skill-groups:before{content:"기술";width:100%;margin-bottom:1px}

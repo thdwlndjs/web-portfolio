@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI·AX 엔지니어 포트폴리오 리디자인 미리보기">
+  <title>Portfolio redesign preview</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#featured">프로젝트로 이동</a>
+  <main class="layout">
+    <aside class="identity" aria-label="포트폴리오 소개와 탐색">
+      <div class="identity-main">
+        <p class="eyebrow">PORTFOLIO / 2027</p>
+        <h1>채용하세요.<br><strong>끝까지 가는</strong><br>신입 AX 개발자</h1>
+        <p class="summary">문제를 구조화하고, 적합한 AI·소프트웨어 접근을 설계하고, 실제 결과를 검증합니다.</p>
+        <ul class="credentials" aria-label="핵심 이력">
+          <li>1차 프로젝트 우수상</li>
+          <li>대학생 맞춤형 매칭 플랫폼 논문 발표</li>
+          <li>정보처리기사</li>
+        </ul>
+      </div>
+      <nav class="section-nav" aria-label="섹션 탐색">
+        <a class="is-active" href="#featured" data-section="featured"><i></i><span>대표 프로젝트</span></a>
+        <a href="#additional" data-section="additional"><i></i><span>추가 프로젝트</span></a>
+        <a href="#notes" data-section="notes"><i></i><span>이력 · 기술</span></a>
+      </nav>
+      <div class="external-links"><a href="https://github.com/thdwlndjs" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+    </aside>
+
+    <section class="content">
+      <header class="content-header">
+        <p class="eyebrow">SELECTED WORK</p>
+        <p>AI/AX 엔지니어 · 백엔드/FDE 성격의 개발 직무를 위한 프로젝트 기록입니다.</p>
+      </header>
+
+      <section class="section featured" id="featured" aria-labelledby="featured-title">
+        <div class="section-heading"><p class="eyebrow">01 / FEATURED</p><h2 id="featured-title">대표 프로젝트</h2></div>
+        <article class="featured-card">
+          <div class="featured-image image-news"><img src="../index_files/news-bias-local.png" alt="News Bias Explorer 실제 화면 캡처"></div>
+          <div class="featured-copy">
+            <p class="project-type">AI 엔지니어링 · 대표 프로젝트 01</p>
+            <h3>News Bias Explorer</h3>
+            <p class="project-lead">다관점 기사 검색을 위한 검색 전략 설계와 성능 최적화</p>
+            <p>같은 사건을 다르게 다룬 기사를 찾고 비교하기 위한 뉴스 분석 프로젝트입니다. 기사 수집과 검색, 요약을 연결해 다양한 관점을 탐색합니다.</p>
+            <ul><li>키워드 검색과 임베딩 기반 검색을 활용한 관련 기사 탐색</li><li>기사 요약과 관점별 추천을 연결한 분석 흐름</li><li>처리 시간을 약 2분에서 14초로 개선</li></ul>
+            <div class="tags"><span>Python</span><span>Elasticsearch</span><span>Node.js</span><span>React</span><span>Gemini</span></div>
+            <a class="project-link" href="https://github.com/thdwlndjs/news-bias-analyzer" target="_blank" rel="noopener noreferrer">GitHub 보기 <span>↗</span></a>
+          </div>
+        </article>
+        <article class="featured-card reverse">
+          <div class="featured-image image-wardrobe"><img src="../index_files/smart-wardrobe-web.png" alt="Smart Wardrobe Agent 실제 화면 캡처"></div>
+          <div class="featured-copy">
+            <p class="project-type">AX 시스템 설계 · 대표 프로젝트 02</p>
+            <h3>Smart Wardrobe Agent</h3>
+            <p class="project-lead">물리적 의류 상태의 디지털 모델링과 상황 기반 에이전트 설계</p>
+            <p>의류의 위치와 상태를 디지털로 관리하고 상황에 맞는 추천과 보관 흐름을 연결하는 스마트 옷장 프로토타입입니다.</p>
+            <ul><li>의류 위치와 관측 시각을 기록하고 확인되지 않은 위치를 구분</li><li>가구 구성원별 접근과 의류 관리·추천 흐름을 연결</li><li>가상 피팅 흐름은 Mock으로 검증</li></ul>
+            <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>Celery</span></div>
+            <a class="project-link" href="https://github.com/thdwlndjs/LG-CLOS-IT" target="_blank" rel="noopener noreferrer">GitHub 보기 <span>↗</span></a>
+          </div>
+        </article>
+      </section>
+
+      <section class="section additional" id="additional" aria-labelledby="additional-title">
+        <div class="section-heading"><p class="eyebrow">02 / MORE WORK</p><h2 id="additional-title">추가 프로젝트</h2><p class="section-description">이름과 역할을 먼저 읽고, 필요할 때 화면을 확인하는 목록형 탐색입니다.</p></div>
+        <div class="additional-layout">
+          <div class="project-list" id="project-list" aria-label="추가 프로젝트 목록"></div>
+          <aside class="fixed-preview" aria-live="polite">
+            <p class="eyebrow">SELECTED PREVIEW</p>
+            <div class="preview-frame" id="preview-frame"></div>
+            <div class="preview-copy"><h3 id="preview-title"></h3><p id="preview-description"></p></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section notes" id="notes" aria-labelledby="notes-title">
+        <div class="section-heading"><p class="eyebrow">03 / UNDER REVIEW</p><h2 id="notes-title">이력 · 기술</h2></div>
+        <p>이 구간은 최종 이력 구성과 색상 방향을 결정한 뒤 반영합니다. 현재 미리보기에서는 레이아웃의 끝점만 확인합니다.</p>
+      </section>
+      <footer>Prototype only · 기존 배포 페이지는 유지됩니다.</footer>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

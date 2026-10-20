@@ -234,3 +234,19 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline-color:#454a44}
   .sidebar .site-footer{display:none}
 }
 @media(min-width:1180px) and (max-height:820px){.sidebar{position:static;height:auto;overflow:visible}}
+@media(min-width:1180px){
+  .sidebar .career-record{padding:14px 0 12px}
+  .sidebar .career-record-heading h3{font-size:17px;margin:4px 0 9px}
+  .sidebar .career-timeline,.sidebar .credential-list,.sidebar .career-facts{display:none}
+  .career-highlights{display:grid;gap:0;border-top:1px solid var(--border)}
+  .career-highlights>div{display:grid;grid-template-columns:58px 1fr;gap:7px;padding:7px 0;border-bottom:1px solid var(--border)}
+  .career-highlights span{color:var(--muted);font:8px/1.45 var(--mono);letter-spacing:.04em}
+  .career-highlights strong{font-size:11px;line-height:1.45}
+  .sidebar .about{padding:12px 0;border-top:0}
+  .sidebar .skill-groups{display:flex;flex-wrap:wrap;gap:5px;padding-top:20px}
+  .sidebar .skill-groups:before{content:"기술";width:100%;margin-bottom:1px}
+  .sidebar .skill-group,.sidebar .skill-items{display:contents}
+  .sidebar .skill-group h3{display:none}
+  .sidebar .skill-items span{border:1px solid var(--border);padding:3px 5px;font-size:8px;line-height:1.35}
+  .sidebar .contact{margin-top:0;padding:11px 0 0}
+}

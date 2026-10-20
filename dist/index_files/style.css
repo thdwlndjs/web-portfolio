@@ -83,13 +83,12 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline-color:#454a44}
 @media(max-width:760px){.profile-summary,.skill-groups{border-color:var(--border)}}
 /* Editorial layout: square geometry and list-like project presentation. */
 *,*::before,*::after{border-radius:0!important}
-.project,.grid-card{background:transparent;border:0;border-top:1px solid var(--border);box-shadow:none;gap:32px}
+.project,.grid-card{background:transparent;border:1px solid var(--border);box-shadow:none;gap:32px}
 .project{padding:30px 0}
 .project+.project{margin-top:0}
 .project:hover,.project:focus-within,.grid-card:hover,.grid-card:focus-within{background:transparent;border-color:var(--fg);box-shadow:none;transform:none}
-.project-grid{gap:0;column-gap:42px}
+.project-grid{row-gap:20px;column-gap:42px}
 .grid-card{padding:28px 0}
-.grid-visual{border-inline:1px solid var(--border)}
 .project-preview:hover{transform:none}
 .guide-trigger{box-shadow:none}
 .project-dialog{box-shadow:none}

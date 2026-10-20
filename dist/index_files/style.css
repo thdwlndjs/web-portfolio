@@ -84,11 +84,23 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline-color:#454a44}
 /* Editorial layout: square geometry and list-like project presentation. */
 *,*::before,*::after{border-radius:0!important}
 .project,.grid-card{background:transparent;border:1px solid var(--border);box-shadow:none;gap:32px}
-.project{padding:30px 0}
+.project{padding:28px}
 .project+.project{margin-top:0}
 .project:hover,.project:focus-within,.grid-card:hover,.grid-card:focus-within{background:transparent;border-color:var(--fg);box-shadow:none;transform:none}
 .project-grid{row-gap:20px;column-gap:42px}
-.grid-card{padding:28px 0}
+.grid-card{padding:0}
 .project-preview:hover{transform:none}
 .guide-trigger{box-shadow:none}
 .project-dialog{box-shadow:none}
+@media(min-width:1180px){
+  .page-shell{display:flex;gap:54px;align-items:flex-start}
+  .sidebar{width:290px;flex:none}
+  .work{min-width:0;flex:1;padding-top:64px}
+  .sidebar .intro{display:block;padding:64px 0 48px}
+  .sidebar .intro h1{font-size:clamp(52px,5vw,68px);letter-spacing:-3px}
+  .sidebar .profile-summary{margin-top:34px;padding:23px 0 0;border-left:0;border-top:1px solid var(--border)}
+  .sidebar .about-grid{grid-template-columns:1fr;gap:30px}
+  .sidebar .site-footer{display:block;padding-bottom:48px}
+  .sidebar .site-footer a{display:inline-block;margin-top:8px}
+}
+@media(max-width:760px){.project{padding:20px}}

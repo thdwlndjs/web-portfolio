@@ -189,6 +189,28 @@ byId('guide-panel').addEventListener('click', event => { if (event.target.closes
 function updateProgress() { const max = document.documentElement.scrollHeight - innerHeight; document.documentElement.style.setProperty('--progress', max > 0 ? scrollY / max : 0); }
 window.addEventListener('scroll', updateProgress, { passive: true });
 window.addEventListener('resize', updateProgress);
+const desktopLayout = matchMedia('(min-width: 1180px)');
+function arrangePortfolioLayout() {
+  const shell = document.querySelector('.page-shell');
+  const work = document.querySelector('.work');
+  const intro = document.querySelector('.intro');
+  const about = document.querySelector('.about');
+  const contact = document.querySelector('.contact');
+  const footer = document.querySelector('.site-footer');
+  if (!shell || !work || !intro || !about || !contact || !footer) return;
+  let sidebar = shell.querySelector(':scope > .sidebar');
+  if (desktopLayout.matches) {
+    if (!sidebar) { sidebar = document.createElement('div'); sidebar.className = 'sidebar'; shell.insertBefore(sidebar, work); }
+    [intro, about, contact, footer].forEach(section => sidebar.append(section));
+  } else if (sidebar) {
+    shell.insertBefore(intro, work);
+    let previous = work;
+    [about, contact, footer].forEach(section => { previous.after(section); previous = section; });
+    sidebar.remove();
+  }
+}
+arrangePortfolioLayout();
+desktopLayout.addEventListener('change', arrangePortfolioLayout);
 byId('total-count').textContent = allProjects.length;
 byId('collection-count').textContent = projects.length;
 renderFeatured(); renderFilters(); renderGrid(); updateProgress();

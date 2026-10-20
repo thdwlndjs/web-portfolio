@@ -8,6 +8,7 @@ const projects = [
   ['Knowledge Graph','FastAPI와 Neo4j를 연결해 논문 정보를 생성하고 조회하는 프로젝트입니다.'],
   ['RecycleCenter','재활용과 아이템 분류를 소재로 한 Unity 팀 게임 프로젝트입니다.'],
   ['ASC','업무 의뢰를 접수하고 실행·검토·승인으로 연결하는 AI 워크플로 프로젝트입니다.','asc-b2c-web.png','ASC 실제 화면 캡처'],
+  ['개발자 전투력 측정기','개발 역량을 전투력으로 표현해 전투 화면에서 결과를 보여 주는 인터랙티브 프로젝트입니다.','dragonslayer.png','개발자 전투력 측정기 실제 화면 캡처'],
 ];
 const list = document.querySelector('#project-list');
 const preview = document.querySelector('#preview-image');

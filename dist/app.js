@@ -195,17 +195,18 @@ function arrangePortfolioLayout() {
   const work = document.querySelector('.work');
   const intro = document.querySelector('.intro');
   const about = document.querySelector('.about');
+  const career = document.querySelector('.career-record');
   const contact = document.querySelector('.contact');
   const footer = document.querySelector('.site-footer');
-  if (!shell || !work || !intro || !about || !contact || !footer) return;
+  if (!shell || !work || !intro || !about || !career || !contact || !footer) return;
   let sidebar = shell.querySelector(':scope > .sidebar');
   if (desktopLayout.matches) {
     if (!sidebar) { sidebar = document.createElement('div'); sidebar.className = 'sidebar'; shell.insertBefore(sidebar, work); }
-    [intro, about, contact, footer].forEach(section => sidebar.append(section));
+    [intro, about, contact, career, footer].forEach(section => sidebar.append(section));
   } else if (sidebar) {
     shell.insertBefore(intro, work);
     let previous = work;
-    [about, contact, footer].forEach(section => { previous.after(section); previous = section; });
+    [about, career, contact, footer].forEach(section => { previous.after(section); previous = section; });
     sidebar.remove();
   }
 }

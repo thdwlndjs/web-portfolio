@@ -201,3 +201,36 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline-color:#454a44}
   .sidebar .credential-list ul{margin-top:10px;gap:5px}
   .sidebar .credential-list li{padding:5px 7px;font-size:9px}
 }
+@media(min-width:1180px){
+  .sidebar{position:sticky;top:88px;height:calc(100vh - 104px);overflow:hidden;display:flex;flex-direction:column}
+  .sidebar .intro{padding:0 0 12px}
+  .sidebar .intro h1{font-size:46px;line-height:1;margin-top:5px}
+  .sidebar .intro-role{margin-top:6px;font-size:15px}
+  .sidebar .intro-description,.sidebar .intro-links,.sidebar .profile-summary{display:none}
+  .sidebar .career-record{padding:14px 0;border-top:1px solid var(--border)}
+  .sidebar .career-record-heading h3{font-size:17px;margin:4px 0}
+  .sidebar .career-record-heading>p:last-child,.sidebar .career-facts{display:none}
+  .sidebar .career-timeline{margin-top:10px;border:0}
+  .sidebar .career-timeline article{display:grid;grid-template-columns:74px 1fr;gap:7px;padding:7px 0;border:0;border-bottom:1px solid var(--border)}
+  .sidebar .career-timeline article .eyebrow{grid-column:1;font-size:8px;line-height:1.45}
+  .sidebar .career-timeline h4{grid-column:2;margin:0;font-size:11px;line-height:1.45}
+  .sidebar .career-timeline article>p:not(.eyebrow),.sidebar .record-note{display:none}
+  .sidebar .credential-list{margin-top:12px;padding-top:0;border:0}
+  .sidebar .credential-list h4{font-size:12px;margin:0 0 7px}
+  .sidebar .credential-list ul{margin:0;gap:4px}
+  .sidebar .credential-list li{padding:4px 6px;font-size:8px}
+  .sidebar .about{padding:14px 0;border-top:1px solid var(--border)}
+  .sidebar .about .section-heading,.sidebar .about-copy{display:none}
+  .sidebar .about-grid{display:block;margin:0}
+  .sidebar .skill-groups{position:relative;padding-top:21px}
+  .sidebar .skill-groups:before{content:"기술";position:absolute;top:0;left:0;color:var(--fg);font-size:12px;font-weight:600}
+  .sidebar .skill-group h3{font-size:9px}
+  .sidebar .skill-items span{font-size:9px}
+  .sidebar .contact{margin-top:auto;padding:13px 0 0;border-top:1px solid var(--border)}
+  .sidebar .contact h2{font-size:14px}
+  .sidebar .contact-copy>p{display:none}
+  .sidebar .email-group{margin-top:5px}
+  .sidebar .email-group>a{font-size:11px}
+  .sidebar .site-footer{display:none}
+}
+@media(min-width:1180px) and (max-height:820px){.sidebar{position:static;height:auto;overflow:visible}}

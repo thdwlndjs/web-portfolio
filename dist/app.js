@@ -202,7 +202,7 @@ function arrangePortfolioLayout() {
   let sidebar = shell.querySelector(':scope > .sidebar');
   if (desktopLayout.matches) {
     if (!sidebar) { sidebar = document.createElement('div'); sidebar.className = 'sidebar'; shell.insertBefore(sidebar, work); }
-    [intro, about, contact, career, footer].forEach(section => sidebar.append(section));
+    [intro, career, about, contact, footer].forEach(section => sidebar.append(section));
   } else if (sidebar) {
     shell.insertBefore(intro, work);
     let previous = work;
